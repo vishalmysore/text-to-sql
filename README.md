@@ -265,4 +265,4 @@ Results captured against the **11-table enterprise schema** using the live Nvidi
 
 The fix is **not** a better LLM. With 11 tables, 6 business domains, and systematically opaque naming, **Nvidia NEMO achieved 10% accuracy** — not meaningfully better than a random guess.
 
-The fix is a **semantic layer** — a knowledge graph or ontology that maps cryptic column names to business concepts *before* the LLM ever sees them. That is precisely what [HyperRAG](../hyperrag/README.md) provides.
+The fix is a **semantic layer** — a knowledge graph or ontology that maps cryptic column names to business concepts *before* the LLM ever sees them. 
