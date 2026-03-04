@@ -31,7 +31,7 @@ The schema intentionally spans **6 business domains** with inconsistent naming c
 
 ## 💥 The 10 Failure Scenarios
 
-### Original 5 — Single/Two-Table Failures
+###  Single/Two-Table Failures
 
 | # | Query | Trap | Expected Correct Answer |
 |---|-------|------|------------------------|
@@ -41,7 +41,7 @@ The schema intentionally spans **6 business domains** with inconsistent naming c
 | 4 | *"What was the gross revenue in January 2024?"* | `M_PRD='202401'` is a VARCHAR, not a DATE; `VAL_A`=gross (zero context) | `850000` |
 | 5 | *"Show me all corporate clients and their transaction count."* | `C_SEG='C'` not `'Corporate'` | `Acme Corp` |
 
-### New 5 — Complex Multi-Table / Cross-Domain Failures
+###  Complex Multi-Table / Cross-Domain Failures
 
 | # | Query | Trap | Expected Correct Answer |
 |---|-------|------|------------------------|
